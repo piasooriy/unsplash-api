@@ -1,1 +1,1 @@
-A repository showcasing using API from unsplash to showcase royalty-free photographs
+A repository showcasing a random photo from Unsplash, using unsplash open API.
