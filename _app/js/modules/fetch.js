@@ -29,13 +29,13 @@ async function handleResponse(response) {
 		renderImage(output.urls.regular, output.alt_description);
 	console.log(output)	
 	} else if (response.status === 404) {
-		throw new Error('Pigs are often pink');
+		throw new Error('URL does not exist');
 	} else if ( response.status === 401) {
-			throw new Error('Pigs can be blue too');
+			throw new Error('Not authorized user');
 	} else if ( response.status >= 500){
-		throw new Error ('Pigs are not responding');
+		throw new Error ('Server nor responding');
 	} else {
-		throw new Error('Pigs went the wrong way');
+		throw new Error('Something went wrong');
 	}
 	console.log(response);
 }
